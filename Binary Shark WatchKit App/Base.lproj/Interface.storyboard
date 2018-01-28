@@ -1,16 +1,130 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14087.3" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14075.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14028"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Account-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller title="Account" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Binary_Shark_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Status: Unknown" id="BcF-RL-3kR" userLabel="Account Status Label">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <separator alignment="left" id="6dv-8D-uwX"/>
+                        <table alignment="left" id="65y-z8-hJd" userLabel="Droplets Table">
+                            <items>
+                                <tableRow identifier="DropletRowType" id="xZd-8N-RJV" customClass="DropletRowController" customModule="Binary_Shark_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" animationDuration="1" layout="vertical" id="wBa-th-Ddc">
+                                        <items>
+                                            <label alignment="left" text="Untitled Droplet" id="pyL-ta-wAM" userLabel="Droplet Name Label">
+                                                <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                            </label>
+                                            <label alignment="left" text="Unknown Status" id="9V1-Wf-rQ3" userLabel="Droplet Status Label">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="nameLabel" destination="pyL-ta-wAM" id="mml-cw-osG"/>
+                                        <outlet property="statusLabel" destination="9V1-Wf-rQ3" id="2eu-1p-IiJ"/>
+                                        <segue destination="1J3-uP-V3G" kind="push" id="eXs-LF-dOa"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <menu key="menu" id="qAf-bO-IPN">
+                        <items>
+                            <menuItem title="Refresh" icon="resume" id="hvi-Cn-Xgb" userLabel="Refresh">
+                                <connections>
+                                    <action selector="refreshMenuItemSelected" destination="AgC-eL-Hgc" id="mHF-wr-90D"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="dropletsTable" destination="65y-z8-hJd" id="FBY-eR-6SM"/>
+                        <outlet property="statusLabel" destination="BcF-RL-3kR" id="7tu-IK-iRq"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Droplet-->
+        <scene sceneID="2E3-A3-FsF">
+            <objects>
+                <controller title="Droplet" id="1J3-uP-V3G" customClass="DropletController" customModule="Binary_Shark_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Untitled Droplet" id="CVf-O0-eEx" userLabel="Droplet Name Label">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <switch width="1" alignment="left" value="YES" title="Power" id="i5D-Sq-uKK" userLabel="Droplet Power Switch">
+                            <connections>
+                                <action selector="powerSwitchChanged:" destination="1J3-uP-V3G" id="P4Z-2G-DNU"/>
+                            </connections>
+                        </switch>
+                        <separator alignment="left" id="klV-Do-q8A"/>
+                        <label alignment="left" text="Actions" id="wgK-Fd-3vx">
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
+                        <table alignment="left" id="x1t-He-qmA" userLabel="Actions Table">
+                            <items>
+                                <tableRow identifier="ActionRowType" selectable="NO" id="H79-Ej-r2D" customClass="ActionRowController" customModule="Binary_Shark_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="kMa-D5-0pT">
+                                        <items>
+                                            <label alignment="left" text="Unknown Type" id="xMW-ty-cjU" userLabel="Action Type Label"/>
+                                            <label alignment="left" text="Unknown Status" id="atM-Pf-j72" userLabel="Action Status Label">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                            <label alignment="left" text="Unknown Date" id="baY-QU-dnU" userLabel="Action Date Label">
+                                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dateLabel" destination="baY-QU-dnU" id="oqn-za-IG3"/>
+                                        <outlet property="statusLabel" destination="atM-Pf-j72" id="YjP-9S-z8r"/>
+                                        <outlet property="typeLabel" destination="xMW-ty-cjU" id="aP4-YS-6Px"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <menu key="menu" id="pt7-ZP-xmt">
+                        <items>
+                            <menuItem title="Power Cycle" icon="repeat" id="v3t-Lb-aeb">
+                                <connections>
+                                    <action selector="powerCycleMenuItemSelected" destination="1J3-uP-V3G" id="0vT-25-aeO"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Create Snapshot" icon="add" id="bME-O7-Y2y">
+                                <connections>
+                                    <action selector="createSnapshotMenuItemSelected" destination="1J3-uP-V3G" id="Rnl-PQ-SgK"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Refresh" icon="resume" id="tPF-lM-FKj">
+                                <connections>
+                                    <action selector="refreshMenuItemSelected" destination="1J3-uP-V3G" id="jUL-Pi-Y7d"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="actionsTable" destination="x1t-He-qmA" id="D7D-zM-Q9c"/>
+                        <outlet property="nameLabel" destination="CVf-O0-eEx" id="3hJ-g3-ZBc"/>
+                        <outlet property="powerSwitch" destination="i5D-Sq-uKK" id="zNa-uo-zWb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="348.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +145,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Binary_Shark_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

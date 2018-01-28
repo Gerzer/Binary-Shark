@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84173956C0FF4D41DDCE20C6 /* Pods_Binary_Shark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E719FA9856C78DC8674518E /* Pods_Binary_Shark.framework */; };
+		C058E071201C0B4000A8982D /* Settings-Watch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C058E070201C0B4000A8982D /* Settings-Watch.bundle */; };
+		C058E079201CDFD600A8982D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C058E078201CDFD600A8982D /* Settings.bundle */; };
+		C09070D7201D2708007FAE27 /* DropletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09070D6201D2708007FAE27 /* DropletController.swift */; };
 		C0A1D058201B718800C55978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A1D057201B718800C55978 /* AppDelegate.swift */; };
 		C0A1D05A201B718800C55978 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A1D059201B718800C55978 /* ViewController.swift */; };
 		C0A1D05D201B718800C55978 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A1D05B201B718800C55978 /* Main.storyboard */; };
@@ -20,6 +24,8 @@
 		C0A1D07D201B718B00C55978 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A1D07C201B718B00C55978 /* ExtensionDelegate.swift */; };
 		C0A1D07F201B718B00C55978 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A1D07E201B718B00C55978 /* NotificationController.swift */; };
 		C0A1D081201B718C00C55978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A1D080201B718C00C55978 /* Assets.xcassets */; };
+		C0DE285A201BD85B003DF385 /* DropletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE2859201BD85B003DF385 /* DropletController.swift */; };
+		E8DB02DB9443BF5BA1840CE3 /* Pods_Binary_Shark_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A69BD2C0A97A6474C8B3699 /* Pods_Binary_Shark_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D527A18BA813A55C9D569E8 /* Pods-Binary Shark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binary Shark.release.xcconfig"; path = "Pods/Target Support Files/Pods-Binary Shark/Pods-Binary Shark.release.xcconfig"; sourceTree = "<group>"; };
+		4E719FA9856C78DC8674518E /* Pods_Binary_Shark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binary_Shark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A69BD2C0A97A6474C8B3699 /* Pods_Binary_Shark_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binary_Shark_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5C0478A9DCCAC2410C46FC /* Pods-Binary Shark WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binary Shark WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Binary Shark WatchKit Extension/Pods-Binary Shark WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		B7A3516B68F56E5FED816439 /* Pods-Binary Shark WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binary Shark WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Binary Shark WatchKit Extension/Pods-Binary Shark WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		C058E070201C0B4000A8982D /* Settings-Watch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Settings-Watch.bundle"; sourceTree = "<group>"; };
+		C058E072201C0BD200A8982D /* Binary Shark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Binary Shark.entitlements"; sourceTree = "<group>"; };
+		C058E073201C0C2B00A8982D /* Binary Shark WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Binary Shark WatchKit App.entitlements"; sourceTree = "<group>"; };
+		C058E074201C0C3600A8982D /* Binary Shark WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Binary Shark WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		C058E078201CDFD600A8982D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		C09070D6201D2708007FAE27 /* DropletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropletController.swift; sourceTree = "<group>"; };
 		C0A1D054201B718800C55978 /* Binary Shark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Binary Shark.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A1D057201B718800C55978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0A1D059201B718800C55978 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,13 +100,26 @@
 		C0A1D080201B718C00C55978 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0A1D082201B718C00C55978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0A1D083201B718C00C55978 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C0DE2850201B7991003DF385 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DE2852201B79B1003DF385 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DE2859201BD85B003DF385 /* DropletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropletController.swift; sourceTree = "<group>"; };
+		D410ED5B7D35EEA4BE7CE7D4 /* Pods_Binary_Shark_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binary_Shark_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA1D2122990257177789474 /* Pods-Binary Shark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binary Shark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Binary Shark/Pods-Binary Shark.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8E55362D6E5ADC6D3D136BB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0A1D051201B718800C55978 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84173956C0FF4D41DDCE20C6 /* Pods_Binary_Shark.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,19 +127,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DB02DB9443BF5BA1840CE3 /* Pods_Binary_Shark_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DC9BD9B81BB3C7B1255EAD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECA1D2122990257177789474 /* Pods-Binary Shark.debug.xcconfig */,
+				3D527A18BA813A55C9D569E8 /* Pods-Binary Shark.release.xcconfig */,
+				B7A3516B68F56E5FED816439 /* Pods-Binary Shark WatchKit Extension.debug.xcconfig */,
+				AE5C0478A9DCCAC2410C46FC /* Pods-Binary Shark WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95A9D4D0828C5037DBC88764 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE2850201B7991003DF385 /* Alamofire.framework */,
+				4E719FA9856C78DC8674518E /* Pods_Binary_Shark.framework */,
+				D410ED5B7D35EEA4BE7CE7D4 /* Pods_Binary_Shark_WatchKit_App.framework */,
+				5A69BD2C0A97A6474C8B3699 /* Pods_Binary_Shark_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C0A1D04B201B718800C55978 = {
 			isa = PBXGroup;
 			children = (
+				C0DE2852201B79B1003DF385 /* Alamofire.framework */,
 				C0A1D056201B718800C55978 /* Binary Shark */,
 				C0A1D06A201B718A00C55978 /* Binary Shark WatchKit App */,
 				C0A1D079201B718B00C55978 /* Binary Shark WatchKit Extension */,
 				C0A1D055201B718800C55978 /* Products */,
+				0DC9BD9B81BB3C7B1255EAD1 /* Pods */,
+				95A9D4D0828C5037DBC88764 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,11 +182,15 @@
 		C0A1D056201B718800C55978 /* Binary Shark */ = {
 			isa = PBXGroup;
 			children = (
+				C058E072201C0BD200A8982D /* Binary Shark.entitlements */,
 				C0A1D057201B718800C55978 /* AppDelegate.swift */,
 				C0A1D059201B718800C55978 /* ViewController.swift */,
+				C09070D6201D2708007FAE27 /* DropletController.swift */,
 				C0A1D05B201B718800C55978 /* Main.storyboard */,
 				C0A1D05E201B718A00C55978 /* Assets.xcassets */,
 				C0A1D060201B718A00C55978 /* LaunchScreen.storyboard */,
+				C058E078201CDFD600A8982D /* Settings.bundle */,
+				C058E070201C0B4000A8982D /* Settings-Watch.bundle */,
 				C0A1D063201B718A00C55978 /* Info.plist */,
 			);
 			path = "Binary Shark";
@@ -139,6 +199,7 @@
 		C0A1D06A201B718A00C55978 /* Binary Shark WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				C058E073201C0C2B00A8982D /* Binary Shark WatchKit App.entitlements */,
 				C0A1D06B201B718A00C55978 /* Interface.storyboard */,
 				C0A1D06E201B718B00C55978 /* Assets.xcassets */,
 				C0A1D070201B718B00C55978 /* Info.plist */,
@@ -149,7 +210,9 @@
 		C0A1D079201B718B00C55978 /* Binary Shark WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C058E074201C0C3600A8982D /* Binary Shark WatchKit Extension.entitlements */,
 				C0A1D07A201B718B00C55978 /* InterfaceController.swift */,
+				C0DE2859201BD85B003DF385 /* DropletController.swift */,
 				C0A1D07C201B718B00C55978 /* ExtensionDelegate.swift */,
 				C0A1D07E201B718B00C55978 /* NotificationController.swift */,
 				C0A1D080201B718C00C55978 /* Assets.xcassets */,
@@ -166,10 +229,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0A1D08E201B718C00C55978 /* Build configuration list for PBXNativeTarget "Binary Shark" */;
 			buildPhases = (
+				FC6141D2DF9B9E609F2CA063 /* [CP] Check Pods Manifest.lock */,
 				C0A1D050201B718800C55978 /* Sources */,
 				C0A1D051201B718800C55978 /* Frameworks */,
 				C0A1D052201B718800C55978 /* Resources */,
 				C0A1D08D201B718C00C55978 /* Embed Watch Content */,
+				B3956111567AA6594D8C42C0 /* [CP] Embed Pods Frameworks */,
+				7918F3331A628827803FE6CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,6 +253,7 @@
 			buildPhases = (
 				C0A1D064201B718A00C55978 /* Resources */,
 				C0A1D089201B718C00C55978 /* Embed App Extensions */,
+				8E55362D6E5ADC6D3D136BB8 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,9 +269,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0A1D086201B718C00C55978 /* Build configuration list for PBXNativeTarget "Binary Shark WatchKit Extension" */;
 			buildPhases = (
+				C6528A70DAD9D32C75A0C2A6 /* [CP] Check Pods Manifest.lock */,
 				C0A1D071201B718B00C55978 /* Sources */,
 				C0A1D072201B718B00C55978 /* Frameworks */,
 				C0A1D073201B718B00C55978 /* Resources */,
+				F04488F326308754E77890B3 /* [CP] Embed Pods Frameworks */,
+				5F74E0FC5D0129299F8A7941 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,17 +297,38 @@
 				TargetAttributes = {
 					C0A1D053201B718800C55978 = {
 						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = V35GJNMJHB;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					C0A1D065201B718A00C55978 = {
 						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = V35GJNMJHB;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					C0A1D074201B718B00C55978 = {
 						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = V35GJNMJHB;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
 			buildConfigurationList = C0A1D04F201B718800C55978 /* Build configuration list for PBXProject "Binary Shark" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -263,6 +354,8 @@
 			files = (
 				C0A1D062201B718A00C55978 /* LaunchScreen.storyboard in Resources */,
 				C0A1D05F201B718A00C55978 /* Assets.xcassets in Resources */,
+				C058E079201CDFD600A8982D /* Settings.bundle in Resources */,
+				C058E071201C0B4000A8982D /* Settings-Watch.bundle in Resources */,
 				C0A1D05D201B718800C55978 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +379,111 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F74E0FC5D0129299F8A7941 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Binary Shark WatchKit Extension/Pods-Binary Shark WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7918F3331A628827803FE6CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Binary Shark/Pods-Binary Shark-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3956111567AA6594D8C42C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Binary Shark/Pods-Binary Shark-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Binary Shark/Pods-Binary Shark-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6528A70DAD9D32C75A0C2A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Binary Shark WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F04488F326308754E77890B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Binary Shark WatchKit Extension/Pods-Binary Shark WatchKit Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Binary Shark WatchKit Extension/Pods-Binary Shark WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC6141D2DF9B9E609F2CA063 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Binary Shark-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C0A1D050201B718800C55978 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -293,6 +491,7 @@
 			files = (
 				C0A1D05A201B718800C55978 /* ViewController.swift in Sources */,
 				C0A1D058201B718800C55978 /* AppDelegate.swift in Sources */,
+				C09070D7201D2708007FAE27 /* DropletController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0DE285A201BD85B003DF385 /* DropletController.swift in Sources */,
 				C0A1D07F201B718B00C55978 /* NotificationController.swift in Sources */,
 				C0A1D07D201B718B00C55978 /* ExtensionDelegate.swift in Sources */,
 				C0A1D07B201B718B00C55978 /* InterfaceController.swift in Sources */,
@@ -400,7 +600,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -454,7 +654,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -464,45 +664,41 @@
 		};
 		C0A1D087201B718C00C55978 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7A3516B68F56E5FED816439 /* Pods-Binary Shark WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Binary Shark WatchKit Extension/Binary Shark WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V35GJNMJHB;
 				INFOPLIST_FILE = "Binary Shark WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.Binary-Shark.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
 		C0A1D088201B718C00C55978 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5C0478A9DCCAC2410C46FC /* Pods-Binary Shark WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Binary Shark WatchKit Extension/Binary Shark WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V35GJNMJHB;
 				INFOPLIST_FILE = "Binary Shark WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.Binary-Shark.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
@@ -511,6 +707,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Binary Shark WatchKit App/Binary Shark WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V35GJNMJHB;
 				IBSC_MODULE = Binary_Shark_WatchKit_Extension;
@@ -521,7 +718,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -530,6 +727,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Binary Shark WatchKit App/Binary Shark WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V35GJNMJHB;
 				IBSC_MODULE = Binary_Shark_WatchKit_Extension;
@@ -540,43 +738,43 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
 		C0A1D08F201B718C00C55978 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA1D2122990257177789474 /* Pods-Binary Shark.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Binary Shark/Binary Shark.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V35GJNMJHB;
 				INFOPLIST_FILE = "Binary Shark/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.Binary-Shark";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C0A1D090201B718C00C55978 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D527A18BA813A55C9D569E8 /* Pods-Binary Shark.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Binary Shark/Binary Shark.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V35GJNMJHB;
 				INFOPLIST_FILE = "Binary Shark/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerzer.Binary-Shark";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
