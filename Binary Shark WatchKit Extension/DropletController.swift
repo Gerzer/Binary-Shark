@@ -22,8 +22,12 @@ class DropletController: WKInterfaceController {
 	var doDisablePowerSwitch: Bool!
 	
 	@IBAction func powerSwitchChanged(_ value: Bool) {
+		var guardedAPIKey = ""
+		if InterfaceController.apiKey != nil {
+			guardedAPIKey = InterfaceController.apiKey
+		}
 		var headers: HTTPHeaders = [:]
-		if let authorizationHeader = Request.authorizationHeader(user: InterfaceController.apiKey, password: "") {
+		if let authorizationHeader = Request.authorizationHeader(user: guardedAPIKey, password: "") {
 			headers[authorizationHeader.key] = authorizationHeader.value
 		}
 		var actionParameter: String!
@@ -41,8 +45,12 @@ class DropletController: WKInterfaceController {
 	}
 	
 	@IBAction func powerCycleMenuItemSelected() {
+		var guardedAPIKey = ""
+		if InterfaceController.apiKey != nil {
+			guardedAPIKey = InterfaceController.apiKey
+		}
 		var headers: HTTPHeaders = [:]
-		if let authorizationHeader = Request.authorizationHeader(user: InterfaceController.apiKey, password: "") {
+		if let authorizationHeader = Request.authorizationHeader(user: guardedAPIKey, password: "") {
 			headers[authorizationHeader.key] = authorizationHeader.value
 		}
 		let parameters: Parameters = [
@@ -59,8 +67,12 @@ class DropletController: WKInterfaceController {
 		dateFormatter.timeStyle = .short
 		self.presentTextInputController(withSuggestions: [dateFormatter.string(from: Date())], allowedInputMode: WKTextInputMode.plain) { results in
 			if let nameParameter = results?.first as? String {
+				var guardedAPIKey = ""
+				if InterfaceController.apiKey != nil {
+					guardedAPIKey = InterfaceController.apiKey
+				}
 				var headers: HTTPHeaders = [:]
-				if let authorizationHeader = Request.authorizationHeader(user: InterfaceController.apiKey, password: "") {
+				if let authorizationHeader = Request.authorizationHeader(user: guardedAPIKey, password: "") {
 					headers[authorizationHeader.key] = authorizationHeader.value
 				}
 				let parameters: Parameters = [
@@ -98,8 +110,12 @@ class DropletController: WKInterfaceController {
 	}
 	
 	func refreshData() {
+		var guardedAPIKey = ""
+		if InterfaceController.apiKey != nil {
+			guardedAPIKey = InterfaceController.apiKey
+		}
 		var headers: HTTPHeaders = [:]
-		if let authorizationHeader = Request.authorizationHeader(user: InterfaceController.apiKey, password: "") {
+		if let authorizationHeader = Request.authorizationHeader(user: guardedAPIKey, password: "") {
 			headers[authorizationHeader.key] = authorizationHeader.value
 		}
 		Alamofire.request("https://api.digitalocean.com/v2/droplets/\(String(self.id))", method: .get, headers: headers).responseJSON { response in

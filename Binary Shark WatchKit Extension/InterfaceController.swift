@@ -57,8 +57,12 @@ class InterfaceController: WKInterfaceController {
 	}
 	
 	func refreshData() {
+		var guardedAPIKey = ""
+		if InterfaceController.apiKey != nil {
+			guardedAPIKey = InterfaceController.apiKey
+		}
 		var headers: HTTPHeaders = [:]
-		if let authorizationHeader = Request.authorizationHeader(user: InterfaceController.apiKey, password: "") {
+		if let authorizationHeader = Request.authorizationHeader(user: guardedAPIKey, password: "") {
 			headers[authorizationHeader.key] = authorizationHeader.value
 		}
 		Alamofire.request("https://api.digitalocean.com/v2/account", method: .get, headers: headers).responseJSON { response in

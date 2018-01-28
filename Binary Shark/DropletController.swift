@@ -67,8 +67,12 @@ class DropletController: UIViewController, UITableViewDataSource {
 		let confirmAction = UIAlertAction(title: "Continue", style: .default) { (_) in
 			let field = alertController.textFields![0] as UITextField
 			let nameParameter = field.text
+			var guardedAPIKey = ""
+			if ViewController.apiKey != nil {
+				guardedAPIKey = ViewController.apiKey
+			}
 			var headers: HTTPHeaders = [:]
-			if let authorizationHeader = Request.authorizationHeader(user: ViewController.apiKey, password: "") {
+			if let authorizationHeader = Request.authorizationHeader(user: guardedAPIKey, password: "") {
 				headers[authorizationHeader.key] = authorizationHeader.value
 			}
 			let parameters: Parameters = [

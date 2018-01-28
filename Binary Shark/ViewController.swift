@@ -77,7 +77,11 @@ class ViewController: UITableViewController {
 
 	@objc func refreshData() {
 		var headers: HTTPHeaders = [:]
-		if let authorizationHeader = Request.authorizationHeader(user: ViewController.apiKey, password: "") {
+		var guardedAPIKey = ""
+		if ViewController.apiKey != nil {
+			guardedAPIKey = ViewController.apiKey
+		}
+		if let authorizationHeader = Request.authorizationHeader(user: guardedAPIKey, password: "") {
 			headers[authorizationHeader.key] = authorizationHeader.value
 		}
 		Alamofire.request("https://api.digitalocean.com/v2/account", method: .get, headers: headers).responseJSON { response in
