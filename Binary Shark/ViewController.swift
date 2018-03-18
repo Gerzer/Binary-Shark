@@ -44,7 +44,7 @@ class ViewController: UITableViewController {
 	}
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: "DropletRowIdentifier")!
+		let cell = tableView.dequeueReusableCell(withIdentifier: "DropletRow")!
 		if let name = self.dropletData[indexPath.row]["name"] as? String {
 			cell.textLabel?.text = name
 		}
@@ -58,7 +58,7 @@ class ViewController: UITableViewController {
 	}
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		if segue.identifier == "DropletSegueIdentifier" {
+		if segue.identifier == "DropletSegue" {
 			if let destination = segue.destination as? DropletController {
 				if let index = tableView.indexPathForSelectedRow?.row {
 					destination.id = dropletData[index]["id"] as? Int
@@ -83,24 +83,6 @@ class ViewController: UITableViewController {
 		}
 		if let authorizationHeader = Request.authorizationHeader(user: guardedAPIKey, password: "") {
 			headers[authorizationHeader.key] = authorizationHeader.value
-		}
-		Alamofire.request("https://api.digitalocean.com/v2/account", method: .get, headers: headers).responseJSON { response in
-			if let json = response.result.value as? [String: Any] {
-				if let account = json["account"] as? [String: Any] {
-					if let status = account["status"] as? String {
-						switch status {
-						case "active":
-							self.titleBar.prompt = "Status: Active"
-						case "warning":
-							self.titleBar.prompt = "Status: Warning"
-						case "locked":
-							self.titleBar.prompt = "Status: Locked"
-						default:
-							self.titleBar.prompt = "Status: Unknown"
-						}
-					}
-				}
-			}
 		}
 		Alamofire.request("https://api.digitalocean.com/v2/droplets", method: .get, headers: headers).responseJSON { response in
 			if let json = response.result.value as? [String: Any] {

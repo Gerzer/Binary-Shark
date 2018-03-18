@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		84173956C0FF4D41DDCE20C6 /* Pods_Binary_Shark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E719FA9856C78DC8674518E /* Pods_Binary_Shark.framework */; };
+		C0022947205EE69500831662 /* ActionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0022946205EE69500831662 /* ActionsController.swift */; };
+		C0022949205EF18A00831662 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0022948205EF18A00831662 /* AccountController.swift */; };
 		C058E071201C0B4000A8982D /* Settings-Watch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C058E070201C0B4000A8982D /* Settings-Watch.bundle */; };
 		C058E079201CDFD600A8982D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C058E078201CDFD600A8982D /* Settings.bundle */; };
 		C09070D7201D2708007FAE27 /* DropletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09070D6201D2708007FAE27 /* DropletController.swift */; };
@@ -24,6 +26,9 @@
 		C0A1D07D201B718B00C55978 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A1D07C201B718B00C55978 /* ExtensionDelegate.swift */; };
 		C0A1D07F201B718B00C55978 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A1D07E201B718B00C55978 /* NotificationController.swift */; };
 		C0A1D081201B718C00C55978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A1D080201B718C00C55978 /* Assets.xcassets */; };
+		C0C5D9FE205EF2E000DF82CC /* APIKeyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5D9FD205EF2E000DF82CC /* APIKeyController.swift */; };
+		C0C5DA00205EF4EC00DF82CC /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5D9FF205EF4EC00DF82CC /* SettingsController.swift */; };
+		C0C5DA02205EF51300DF82CC /* CompleteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5DA01205EF51300DF82CC /* CompleteController.swift */; };
 		C0DE285A201BD85B003DF385 /* DropletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE2859201BD85B003DF385 /* DropletController.swift */; };
 		E8DB02DB9443BF5BA1840CE3 /* Pods_Binary_Shark_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A69BD2C0A97A6474C8B3699 /* Pods_Binary_Shark_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
@@ -76,6 +81,8 @@
 		5A69BD2C0A97A6474C8B3699 /* Pods_Binary_Shark_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binary_Shark_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5C0478A9DCCAC2410C46FC /* Pods-Binary Shark WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binary Shark WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Binary Shark WatchKit Extension/Pods-Binary Shark WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		B7A3516B68F56E5FED816439 /* Pods-Binary Shark WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binary Shark WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Binary Shark WatchKit Extension/Pods-Binary Shark WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		C0022946205EE69500831662 /* ActionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsController.swift; sourceTree = "<group>"; };
+		C0022948205EF18A00831662 /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
 		C058E070201C0B4000A8982D /* Settings-Watch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Settings-Watch.bundle"; sourceTree = "<group>"; };
 		C058E072201C0BD200A8982D /* Binary Shark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Binary Shark.entitlements"; sourceTree = "<group>"; };
 		C058E073201C0C2B00A8982D /* Binary Shark WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Binary Shark WatchKit App.entitlements"; sourceTree = "<group>"; };
@@ -100,6 +107,9 @@
 		C0A1D080201B718C00C55978 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0A1D082201B718C00C55978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0A1D083201B718C00C55978 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C0C5D9FD205EF2E000DF82CC /* APIKeyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyController.swift; sourceTree = "<group>"; };
+		C0C5D9FF205EF4EC00DF82CC /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		C0C5DA01205EF51300DF82CC /* CompleteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteController.swift; sourceTree = "<group>"; };
 		C0DE2850201B7991003DF385 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0DE2852201B79B1003DF385 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0DE2859201BD85B003DF385 /* DropletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropletController.swift; sourceTree = "<group>"; };
@@ -186,6 +196,11 @@
 				C0A1D057201B718800C55978 /* AppDelegate.swift */,
 				C0A1D059201B718800C55978 /* ViewController.swift */,
 				C09070D6201D2708007FAE27 /* DropletController.swift */,
+				C0022946205EE69500831662 /* ActionsController.swift */,
+				C0022948205EF18A00831662 /* AccountController.swift */,
+				C0C5D9FD205EF2E000DF82CC /* APIKeyController.swift */,
+				C0C5D9FF205EF4EC00DF82CC /* SettingsController.swift */,
+				C0C5DA01205EF51300DF82CC /* CompleteController.swift */,
 				C0A1D05B201B718800C55978 /* Main.storyboard */,
 				C0A1D05E201B718A00C55978 /* Assets.xcassets */,
 				C0A1D060201B718A00C55978 /* LaunchScreen.storyboard */,
@@ -489,9 +504,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C5DA02205EF51300DF82CC /* CompleteController.swift in Sources */,
+				C0C5D9FE205EF2E000DF82CC /* APIKeyController.swift in Sources */,
 				C0A1D05A201B718800C55978 /* ViewController.swift in Sources */,
+				C0022949205EF18A00831662 /* AccountController.swift in Sources */,
+				C0C5DA00205EF4EC00DF82CC /* SettingsController.swift in Sources */,
 				C0A1D058201B718800C55978 /* AppDelegate.swift in Sources */,
 				C09070D7201D2708007FAE27 /* DropletController.swift in Sources */,
+				C0022947205EE69500831662 /* ActionsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
